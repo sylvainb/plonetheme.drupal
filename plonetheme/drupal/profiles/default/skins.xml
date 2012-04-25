@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="plonetheme.drupal">
+
+ <object name="plonetheme_drupal_custom"
+         meta_type="Filesystem Directory View"
+         directory="plonetheme.drupal:skins/plonetheme_drupal_custom"/>
+
+ <skin-path name="plonetheme.drupal" based-on="Sunburst Theme">
+  <layer name="plonetheme_drupal_custom" insert-after="custom"/>
+ </skin-path>
+
+</object>
