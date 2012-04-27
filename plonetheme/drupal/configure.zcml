@@ -10,7 +10,9 @@
   <five:registerPackage package="." initialize=".initialize" />
   
   <include package=".browser" />
+  
   <i18n:registerTranslations directory="locales" />
+  
   <cmf:registerDirectory name="plonetheme_drupal_custom"/>
   
   <!-- Static resources at /++theme++plonetheme.drupal -->
@@ -23,6 +25,13 @@
       description="Installs the plonetheme.drupal package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plonetheme.drupal uninstall"
+      directory="profiles/uninstall"
+      description="Uninstalls the plonetheme.drupal package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <include package=".upgrades" />
   
 </configure>

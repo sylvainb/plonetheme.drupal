@@ -1,0 +1,4 @@
+<layers>
+    <layer name="plonetheme.drupal Theme" remove="True"
+           interface="plonetheme.drupal.browser.interfaces.IThemeSpecific" />
+</layers>
