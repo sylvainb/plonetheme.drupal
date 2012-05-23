@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plonetheme.drupal\n"
-"POT-Creation-Date: 2010-11-10 11:05+0000\n"
+"POT-Creation-Date: 2012-02-25 11:05+0000\n"
 "PO-Revision-Date: 2010-11-13 11:07+0100\n"
 "Last-Translator: Sylvain Boureliou <sylvain.boureliou@gmail.com>\n"
 "Language-Team: French <plone-fr@lists.plone.org>\n"
@@ -16,3 +16,4 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plonetheme.drupal\n"
 "X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
+
