@@ -10,5 +10,13 @@
       />
   
   <include package="plone.app.contentmenu" />
-  
+ 
+  <browser:page
+  	  for="*"
+      name="plone-versus-drupal"
+      template="plone-versus-drupal.pt"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+      
 </configure>

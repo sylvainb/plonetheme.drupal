@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+
+<tal:comment replace="nothing">
+    Please note that this template fills the "content" slot instead of the
+    "main" slot, this is done so we can provide stuff like the content
+    tabs. This also means that we have to supply things that are normally
+    present from main_template.
+</tal:comment>
+
+<metal:main fill-slot="main">
+
+	<h1 id="parent-fieldname-title" class="documentFirstHeading">
+    	Plone versus Drupal
+    </h1>
+
+	<div id="parent-fieldname-description" class="documentDescription">
+          This content is just an incomplete copy-paste from a Plone-Users discussion.
+    </div>
+    
+    <p class="discreet">Source : <a href="https://groups.google.com/d/topic/plone-users/QBkPHhaY9Q4/discussion" title="[Plone-Users] Plone or Drupal">[Plone-Users] Plone or Drupal - 2012-01-24</a></p>
+
+
+	<div class="discreet">Alex Clark</div>
+	<p class="callout" style="text-align:justify">
+	Choosing Plone means at some point you will be able to write some Python 
+	code vs. having to write PHP. For many folks the former is a pleasure, 
+	while the latter is a chore. Not everyone mind you. But if you are a 
+	"Python person" you are likely to find something attractive about Plone.
+	</p> 
+
+
+	<div class="discreet">Eric Bréhault</div>
+	<p class="callout" style="text-align:justify">
+	<span style="text-decoration:underline">Regarding usage</span>: 
+	Plone can be used immediately out-of-the-box (Drupal needs extra configuration after installation before providing any services), and the core features offer a very decent coverage, so you start building an entire web site easily.
+	Plone is very easy to use, no specific knowledge is needed to start producing content, Drupal is most part of time more difficult (let's say Plone is contributor oriented, whereas Drupal is webmaster oriented).
+	</p>
+	<p class="callout" style="text-align:justify">
+	<span style="text-decoration:underline">Regarding admin sys</span>:
+	Plone provides a fully integrated architecture where you can easily deploy clustering, caching, load balancing, etc...
+	whereas Drupal is only a component (actually a set of components providing CMS features) that needs to be integrated in a global architecture.
+	</p>
+	<p class="callout" style="text-align:justify">
+	<span style="text-decoration:underline">Regarding development</span>:
+	The Plone framework is much more robust and structured, all Plone products respect its standards (and at all levels: component architecture, testability, deployability, CSS classes, JS declaration, internationalization, everything...).
+	Drupal is more unstructured and heterogeneous.
+	</p>
+
+	<div class="discreet">Calvin Hendryx-Parker</div>
+	<p class="callout">
+	We also did some comparison blog posts that you can find here:<br />
+	<a href="http://www.sixfeetup.com/blog/plone-vs.-drupal" title="">www.sixfeetup.com : Plone vs. Drupal</a><br />
+	<a href="http://www.sixfeetup.com/blog/plone-vs-drupal-installation" title="">www.sixfeetup.com : Plone vs. Drupal: Installation</a><br />
+	<a href="http://www.sixfeetup.com/blog/plone-vs.-drupal-core-features-comparison" title="">www.sixfeetup.com : Plone vs. Drupal: Core Features Comparison</a>
+	</p> 
+
+	<div class="discreet">serhat</div>
+	<p class="callout">
+	Possibly the most comprehensive comparison on the net:<br />
+	<a href="http://idealware.org/reports/2010-os-cms" title="">http://idealware.org/reports/2010-os-cms</a>
+	</p> 
+
+	<p>&nbsp;</p>
+         
+</metal:main>
+
+</body>
+</html>
