@@ -5,4 +5,9 @@
     id="++theme++plonetheme.drupal/css/theme.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
+ <stylesheet
+    id="++theme++plonetheme.drupal/css/ie-fixes.css"
+    conditionalcomment="IE"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
 </object>

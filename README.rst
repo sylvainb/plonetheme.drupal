@@ -11,7 +11,11 @@ Overview
 plonetheme.drupal is an installable Plone Theme using `plone.app.theming`_, based on 
 the default Sunburst Plone theme.
 
-Get all the power of Drupal for Plone :)
+Strongly inspired by the Drupal theme `Bartik`_ (default theme in Drupal 7), this theme may help sell Plone to PHP guys ;)
+
+**To be installed before any demonstration to an audience of Drupal followers!**
+
+Do you want to learn more about Plone versus Drupal ? Install this theme and visit *http://<your-plone-site>/@@plone-versus-drupal*
 
 Requirements
 ------------
@@ -62,4 +66,5 @@ Credits
 
 .. _`plone.app.theming`: http://pypi.python.org/pypi/plone.app.theming
 .. _`plone.app.theming installation`: http://pypi.python.org/pypi/plone.app.theming#installation
+.. _`Bartik`: https://drupal.org/documentation/themes/bartik
 

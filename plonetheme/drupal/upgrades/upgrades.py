@@ -1,7 +1,9 @@
 from Products.CMFCore.utils import getToolByName
+PROFILEID = 'profile-plonetheme.drupal:default'
 
-def upgrade_1000_to_1001(context):
+def common(context):
     setup = getToolByName(context, 'portal_setup')
-#    setup.runImportStepFromProfile('profile-plonetheme.drupal:default',
+    setup.runAllImportStepsFromProfile(PROFILEID)
+#    setup.runImportStepFromProfile(PROFILEID,
 #                                   'jsregistry', run_dependencies=False,
 #                                   purge_old=False)

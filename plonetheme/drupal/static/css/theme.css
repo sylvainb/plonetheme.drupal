@@ -1,1 +1,373 @@
-h1 { color: red; }
+/*************************
+ *  Main styles 
+ * **********************/
+
+body {
+	font-size: 100%;
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color: #3B3B3B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 0.5em 0 0 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+h1, h2 {
+    letter-spacing: normal;
+}
+
+#content a:link, dl.portlet a:link {
+	color: #0071B3;
+	
+	text-decoration: none;
+	border-bottom: none;
+}
+#content a:hover, dl.portlet a:hover,
+#content a:focus, dl.portlet a:focus {
+	color: #018FE2!important;
+	text-decoration: underline;
+}
+
+/*************************
+ *  Header 
+ * **********************/
+
+#portal-top-wrapper {
+	background-color: #48A9E4; 
+    background-image: -moz-linear-gradient(center top , #0779BF 0%, #48A9E4 100%); 
+}
+
+#portal-header {
+	margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#portal-title {
+	color: #FFFEFF;
+	font-weight: normal;
+	font-size: 1.821em;
+	height: 100%;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 30px;
+	vertical-align: top;
+}
+#portal-title:hover, portal-title:active, portal-title:focus {
+	text-decoration: underline;   
+}
+
+#portal-personaltools, #portal-personaltools dd {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+}
+#portal-personaltools dd a:hover {
+	background: none repeat scroll 0 0 #48A9E4;
+	color: #FFFFFF;
+}
+
+#portal-searchbox label {
+	color: #FFFFFF;
+}
+
+#portal-globalnav {
+    clear: both;
+    font-size: 0.87em;
+    padding: 0 8px 0 15px;
+    
+    margin: 0;
+	background: none;
+}
+#portal-globalnav li {
+    display: inline-block;
+	margin: 0 1px;
+    padding: 0 1px;
+}
+#portal-globalnav li a {
+    
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #333333;
+    float: left;
+    height: 2.4em;
+    line-height: 2.4em;
+    padding: 0 0.8em;
+    text-decoration: none;
+    text-shadow: 0 1px #EEEEEE;
+    font-size: 0.929em;
+    
+    border-right: none;
+    white-space: normal;
+    min-width: 1em;
+
+}
+#portal-globalnav .selected a, #portal-globalnav .selected a:hover, #portal-globalnav a:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+}
+
+/*************************
+ *  Content 
+ * **********************/
+
+#portal-columns {
+	margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#content {
+	font-size: 94%;
+}
+
+/* Edit bar - green to blue */
+#edit-bar, 
+#content-views, 
+#contentActionMenus, 
+  #contentActionMenus dl.actionMenu a, 
+  #contentActionMenus dl.actionMenu.activated dd {
+    background-color: #48A9E4;
+}
+#edit-bar {
+	border-color: #48A9E4;
+}
+#contentActionMenus dl.actionMenu.activated dd {
+	border-bottom-color: #48A9E4;
+}
+
+/*************************
+ *  Portal message
+ * **********************/
+
+dl.portalMessage {
+    background-color: #F8FFF0;
+    border: 1px solid #BBEE77;
+    font-size: 90%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+dl.portalMessage dt {
+    background-color: #BBEE77;
+    color: #000000;
+}
+
+dl.warning {
+    background-color: #FFDD77;
+    border: 1px solid #DD8800;
+}
+dl.warning dt {
+    background-color: #DD8800;
+    color: #FFFFFF;
+}
+
+dl.error {
+    background-color: #FFDDCC;
+    border: 1px solid #DD0000;
+}
+dl.error dt {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+/*************************
+ *  Footer 
+ * **********************/
+
+#portal-footer-wrapper {
+	background-color: #292929; 
+}
+
+#portal-footer {
+	text-align: center;
+	background: none;
+	color: rgba(255, 255, 255, 0.65);
+    font-size: 0.857em;	
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+#portal-footer a:link, #portal-footer a:visited,
+#portal-colophon a:link, #portal-colophon a:visited,
+#portal-siteactions a:link, #portal-siteactions a:visited {
+	color: rgba(255, 255, 255, 0.8)!important;
+}
+
+#portal-footer a:hover, #portal-footer a:focus,
+#portal-colophon a:hover, #portal-colophon a:focus,
+#portal-siteactions a:hover, #portal-siteactions a:focus {
+	color: rgba(255, 255, 255, 0.8)!important;
+	text-decoration: underline;
+}
+
+/*************************
+ *  Portlets
+ * **********************/
+
+dl.portlet {
+    font-size: 80%!important;
+	margin: 0 0 20px;
+    padding: 15px 20px;
+    background-color: #F6F6F2;
+    border-color: #F9F9F9;
+}
+
+dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
+	padding: 0.4em;
+}
+
+dl.portlet dt {
+    line-height: normal;
+    padding: 0em 0.5em 0.42em 0.5em;
+    font-weight: bold;
+    
+    background: none;
+}
+
+dl.portlet dt a:link, 
+dl.portlet dt a:visited, 
+dl.portlet dt a:hover {
+	border-bottom: 1px solid #D6D6D6;
+    font-size: 1.071em;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #3B3B3B;
+    margin: 0 0 0.5em;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+dl.portlet p {
+    margin-bottom: 1em;
+}
+
+/*************************
+ *  Portlet navigation
+ * **********************/
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: #E7F2F9;
+    border-left: 1em solid #E7F2F9;
+    color: black !important;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+dl.portletCalendar {
+     padding: 15px 0; /* to avoid overflow on the content */
+}
+
+/*************************
+ *  Forms
+ * **********************/
+
+.formControls input, .documentEditable input.context {
+	font-family: "Lucida Grande", Arial, FreeSans;
+	cursor: pointer;
+	padding: 4px 17px;
+	margin-bottom: 1em;
+	margin-right: 0.5em;
+	color:  #3A3A3A;
+	text-align: center;
+	font-weight: normal;
+	font-size: 0.929em;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E4E4E4 #D2D2D2 #B4B4B4;
+	background: url(../images/buttons.png) 0 0 repeat-x;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.formControls input:hover, .formControls input:focus {
+	background: none repeat scroll 0 0 #DEDEDE;
+}
+
+/*************************
+ * Search quick form (header and portlet)
+ * **********************/
+
+.searchButton {
+	font-family: "Lucida Grande", Arial, FreeSans;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	color:  #5A5A5A;
+	text-align: center;
+	font-weight: normal;
+    height: 25px;
+    width: 34px;
+    text-indent: -9999px;
+	font-size: 0.877em;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	border: 1px solid  #E4E4E4;
+	border-bottom: 1px solid  #B4B4B4;
+    border-color: #E4E4E4 #D2D2D2 #B4B4B4;
+	background: url("../images/search-button.png") no-repeat scroll center top transparent;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+input.searchField {
+	border: 1px solid #CCCCCC;
+	font-size: 1em;
+    height: 1.143em;
+	padding: 4px;
+    margin-right: 5px;
+    width: 8em;
+    
+	-moz-appearance: none;
+}
+
+.LSResult, #LSResult {
+	background-color: white;
+	border: 1px solid #666666;
+	display: none;
+	width: 420px; /* fix to work for header&portlet, for IE... */
+}
+.LSResult fieldset, #LSResult fieldset {
+	background-color: #FFFFFF;
+	padding: 0 1em 0;
+	border: none;
+}
+
+.portletSearch .LSResult fieldset, .portletSearch  #LSResult fieldset {
+}
+
+#livesearchLegend {
+    background-color: #FFFFFF;
+}
+
+/*************************
+ * Login portlet buttons
+ * **********************/
+
+.portletLogin .field input {
+	border: 1px solid #CCCCCC;
+	font-size: 1em;
+    height: 1.143em;
+	padding: 4px;
+    margin-right: 5px;
+    width: 8em!important;
+}
+
+.portletLogin div.formControls {
+    margin: 1em 1em 0;
+}
+
+/*************************
+ *  TinyMCE fix
+ * **********************/
+
+.ploneSkin table.mceToolbar {
+	float: none!important;
+}

@@ -1,0 +1,85 @@
+/* Internet Explorer hacks - see http://dimox.net/personal-css-hacks-for-ie6-ie7-ie8/ */
+
+/*************************
+ *  Header 
+ * **********************/
+
+/* IE 7 - display inline-block not supported */
+
+*+html #portal-globalnav li {
+    display: inline;
+	margin: 0 1px;
+    padding: 0 1px;
+}
+
+/* IE 7 - float bug : calendar-previous link was not in the same line */
+
+*+html .portletCalendar dt a#calendar-next {
+	float: none;
+	display: inline;
+}
+*+html .portletCalendar dt a#calendar-previous {
+	float: none;
+	display: inline;
+}
+
+
+/*************************
+ *  Footer 
+ * **********************/
+
+/* IE 8 - rgba not supported */
+
+@media \0screen {
+	
+	#portal-footer {
+		/*color: rgba(255, 255, 255, 0.65);*/
+		color: #b4b4ad; 
+	}
+	#portal-footer a:link, #portal-footer a:visited,
+	#portal-colophon a:link, #portal-colophon a:visited,
+	#portal-siteactions a:link, #portal-siteactions a:visited {
+		/*color: rgba(255, 255, 255, 0.8)!important;*/
+		color: #ffffff!important;
+	}
+	
+	#portal-footer a:hover, #portal-footer a:focus,
+	#portal-colophon a:hover, #portal-colophon a:focus,
+	#portal-siteactions a:hover, #portal-siteactions a:focus {
+		/*color: rgba(255, 255, 255, 0.8)!important;*/
+		color: #ffffff!important;
+	}
+
+}
+
+/* IE 7 - rgba not supported */
+
+*+html #portal-footer {
+	/*color: rgba(255, 255, 255, 0.65);*/
+	color: #b4b4ad; 
+}
+*+html #portal-footer a:link, #portal-footer a:visited,
+*+html #portal-colophon a:link, #portal-colophon a:visited,
+*+html #portal-siteactions a:link, #portal-siteactions a:visited {
+	/*color: rgba(255, 255, 255, 0.8)!important;*/
+	color: #ffffff!important;
+}
+
+*+html #portal-footer a:hover, #portal-footer a:focus,
+*+html #portal-colophon a:hover, #portal-colophon a:focus,
+*+html #portal-siteactions a:hover, #portal-siteactions a:focus {
+	/*color: rgba(255, 255, 255, 0.8)!important;*/
+	color: #ffffff!important;
+}
+
+/*************************
+ * Search quick form (header and portlet)
+ * **********************/
+
+/* IE 7 - text-indent not supported */
+
+*+html .searchButton {
+    /* text-indent: -9999px; */
+    font-size: 0;
+    line-height: 0;
+}

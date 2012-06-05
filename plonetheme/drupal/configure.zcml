@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:plone="http://namespaces.plone.org/plone"
@@ -17,7 +18,13 @@
   
   <!-- Static resources at /++theme++plonetheme.drupal -->
   <plone:static directory="static" type="theme" name="plonetheme.drupal" />
-
+  
+  <!-- j3c.jbot overrides -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="jbot"
+      layer=".browser.interfaces.IThemeSpecific" />
+    
   <genericsetup:registerProfile
       name="default"
       title="plonetheme.drupal"
