@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1dev'
+version = '1.0'
 
 setup(name='plonetheme.drupal',
       version=version,
