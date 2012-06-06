@@ -13,7 +13,7 @@ the default Sunburst Plone theme.
 
 Strongly inspired by the Drupal theme `Bartik`_ (default theme in Drupal 7), this theme may help sell Plone to PHP guys ;)
 
-**To be installed before any demonstration to an audience of Drupal followers!**
+**To be installed before any demonstration to an audience of Drupal followers ;) !**
 
 Do you want to learn more about Plone versus Drupal ? Install this theme and visit *http://<your-plone-site>/@@plone-versus-drupal*
 
@@ -22,12 +22,17 @@ Requirements
 
     * Tested with Plone 4.1.4 (http://plone.org/products/plone)
     
-    * plone.app.theming (*please configure your buildout corresponding to `plone.app.theming installation`_*)
+    * plone.app.theming (please configure your buildout corresponding to `plone.app.theming installation`_)
 
 Screenshot
 ------------
 
 .. image:: https://github.com/sylvainb/plonetheme.drupal/raw/master/docs/plonetheme-drupal-screenshot.png
+   :height: 1039px
+   :width: 1026px
+   :scale: 70 %
+   :alt: Plone Theme Drupal Screeshot
+   :align: center
 
 Installation
 ------------
