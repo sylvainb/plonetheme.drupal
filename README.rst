@@ -24,10 +24,10 @@ Requirements
     
     * plone.app.theming (*please configure your buildout corresponding to `plone.app.theming installation`_*)
 
-Screenshots
+Screenshot
 ------------
 
-.. image:: https://lh3.googleusercontent.com/-TvpeCacVZPU/SQnO7E6d7BI/AAAAAAAAAKc/Zpbms-CylhA/s576/DSCN3602.JPG
+.. image:: https://github.com/sylvainb/plonetheme.drupal/raw/master/docs/plonetheme-drupal-screenshot.png
 
 Installation
 ------------
