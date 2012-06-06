@@ -7,7 +7,7 @@ setup(name='plonetheme.drupal',
       version=version,
       description="Get all the power of Drupal for Plone",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.rst")).read(),
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
