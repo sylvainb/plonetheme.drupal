@@ -9,6 +9,7 @@
     i18n_domain="plonetheme.drupal">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <includeDependencies package="." /><!-- Else tests are broken -->
   
   <include package=".browser" />
   
@@ -17,10 +18,11 @@
   <cmf:registerDirectory name="plonetheme_drupal_custom"/>
   
   <!-- Static resources at /++theme++plonetheme.drupal -->
+  <include package="plone.resource" file="meta.zcml"/>
   <plone:static directory="static" type="theme" name="plonetheme.drupal" />
   
   <!-- j3c.jbot overrides -->
-  <include package="z3c.jbot" file="meta.zcml" />
+  <include package="z3c.jbot" file="meta.zcml" /><!-- Else tests are broken -->
   <browser:jbot
       directory="jbot"
       layer=".browser.interfaces.IThemeSpecific" />

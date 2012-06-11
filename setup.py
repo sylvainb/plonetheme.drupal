@@ -1,7 +1,9 @@
-from setuptools import setup, find_packages
 import os
+from setuptools import setup, find_packages
 
 version = '1.1.dev0'
+
+tests_require = ['zope.testing', 'plone.app.testing']
 
 setup(name='plonetheme.drupal',
       version=version,
@@ -35,6 +37,9 @@ setup(name='plonetheme.drupal',
           'z3c.jbot'
           # -*- Extra requirements: -*-
       ],
+      tests_require=tests_require,
+      extras_require={'test': tests_require},
+      #test_suite='plonetheme.drupal.tests.test_doctest.test_suite',
       entry_points={
           'z3c.autoinclude.plugin': 'target = plone',
       },

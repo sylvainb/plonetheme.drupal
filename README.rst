@@ -31,7 +31,7 @@ Screenshot
    :height: 1039px
    :width: 1026px
    :scale: 70 %
-   :alt: Plone Theme Drupal Screeshot
+   :alt: Plone Theme Drupal Screenshot
    :align: center
 
 Installation
@@ -60,13 +60,30 @@ Enabling the theme
 
     Install the theme from the Add-ons control panel. That's it!
 
+Quickly test ?
+~~~~~~~~~~~~~~~~~~~~
+
+Download plonetheme.drupal and use virtualenv and buildout to test the theme::
+
+	easy_install virtualenv
+	cd plonetheme.drupal
+	virtualenv .
+	source bin/activate
+	(plonetheme.drupal) easy_install zc.buildout 
+	(plonetheme.drupal) bin/buildout
+	[...] be patient... [...]
+	(plonetheme.drupal) ./bin/instance fg
+
+Go to http://localhost:8080, add a new Plone Site and install plonetheme.drupal
+
+Launch tests::
+
+	(plonetheme.drupal) ./bin/test -s plonetheme.drupal
+
 Credits
 -------
 
     * Sylvain Boureliou [sylvainb]
-
-
-
 
 
 .. _`plone.app.theming`: http://pypi.python.org/pypi/plone.app.theming
