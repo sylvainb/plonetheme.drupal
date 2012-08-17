@@ -282,7 +282,7 @@ dl.portletCalendar {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #E4E4E4 #D2D2D2 #B4B4B4;
-	background: url(../images/buttons.png) 0 0 repeat-x;
+	background: url("++theme++plonetheme.drupal/images/buttons.png") 0 0 repeat-x;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
@@ -311,7 +311,7 @@ dl.portletCalendar {
 	border: 1px solid  #E4E4E4;
 	border-bottom: 1px solid  #B4B4B4;
     border-color: #E4E4E4 #D2D2D2 #B4B4B4;
-	background: url("../images/search-button.png") no-repeat scroll center top transparent;
+	background: url("++theme++plonetheme.drupal/images/search-button.png") no-repeat scroll center top transparent;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
