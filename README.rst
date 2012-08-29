@@ -83,7 +83,19 @@ Launch tests::
 Credits
 -------
 
-    * Sylvain Boureliou [sylvainb]
+    * Sylvain Boureliou [sylvainb] - `GitHub <https://github.com/sylvainb>`_ - `Website <http://www.asilax.fr/>`_
+
+
+Source code
+-----------
+
+`Source code <https://github.com/sylvainb/plonetheme.drupal>`_ is hosted on Github.
+
+How to contribute and submit a patch ?
+--------------------------------------
+
+`Source code <https://github.com/sylvainb/plonetheme.drupal>`_ and an `issue tracker <https://github.com/sylvainb/plonetheme.drupal/issues>`_ is hosted on Github.
+
 
 
 .. _`plone.app.theming`: http://pypi.python.org/pypi/plone.app.theming
