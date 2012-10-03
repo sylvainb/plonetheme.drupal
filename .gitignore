@@ -4,7 +4,11 @@
 *.EGG
 *.EGG-INFO
 .DS_STORE
+htmlcov
+.coverage
 bin
+lib
+include
 build
 develop-eggs
 downloads
@@ -18,7 +22,9 @@ var
 .hg
 .bzr
 .svn
+.Python
 *.pyc
 *.pyo
 *.tmp*
 REAME.html
+#buildout.cfg
