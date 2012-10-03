@@ -27,4 +27,4 @@ var
 *.pyo
 *.tmp*
 REAME.html
-#buildout.cfg
+buildout.cfg

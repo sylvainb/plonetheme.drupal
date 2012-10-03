@@ -50,7 +50,7 @@ setup(name='plonetheme.drupal',
           # -*- Extra requirements: -*-
       ],
       tests_require=tests_require,
-      test_suite='plonetheme.drupal.tests.test_doctest.test_suite',
+      test_suite='plonetheme.drupal.tests.test_docs.test_suite',
       extras_require={
         'test': tests_require,
       },
