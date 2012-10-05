@@ -65,23 +65,23 @@ Quickly test ?
 
 Download plonetheme.drupal and use virtualenv and buildout to test the theme::
 
-	easy_install virtualenv
-	cd plonetheme.drupal
-	virtualenv .
-	source bin/activate
-	(plonetheme.drupal) easy_install zc.buildout 
+    easy_install virtualenv
+    cd plonetheme.drupal
+    virtualenv .
+    source bin/activate
+    (plonetheme.drupal) easy_install zc.buildout 
     !!! check the buildout config file ``test-plone-base.cfg`` before running !!!
     (plonetheme.drupal) ln -s test-plone-4.2.x.cfg buildout.cfg 
     (plonetheme.drupal) python bootstrap.py
-	(plonetheme.drupal) bin/buildout
-	[...] be patient... [...]
-	(plonetheme.drupal) ./bin/instance fg
+    (plonetheme.drupal) bin/buildout
+    [...] be patient... [...]
+    (plonetheme.drupal) ./bin/instance fg
 
 Go to http://localhost:8080, add a new Plone Site and install plonetheme.drupal
 
 Launch tests::
 
-	(plonetheme.drupal) ./bin/test -s plonetheme.drupal
+    (plonetheme.drupal) ./bin/test -s plonetheme.drupal
 
 Launch code coverage::
 
