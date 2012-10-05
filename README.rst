@@ -20,9 +20,9 @@ Do you want to learn more about Plone versus Drupal ? Install this theme and vis
 Requirements
 ------------
 
-    * Tested with Plone 4.1.4 (http://plone.org/products/plone)
+    * I have tested this release with Plone 4.3a1, Plone 4.2.1.1 and Plone 4.1.6 (http://plone.org/products/plone).
     
-    * plone.app.theming (please configure your buildout corresponding to `plone.app.theming installation`_)
+    * For Plone 4.1.6 : plone.app.theming 1.0 (please configure your buildout corresponding to `plone.app.theming installation`_)
 
 Screenshot
 ------------
@@ -70,6 +70,9 @@ Download plonetheme.drupal and use virtualenv and buildout to test the theme::
 	virtualenv .
 	source bin/activate
 	(plonetheme.drupal) easy_install zc.buildout 
+    !!! check the buildout config file ``test-plone-base.cfg`` before running !!!
+    (plonetheme.drupal) ln -s test-plone-4.2.x.cfg buildout.cfg 
+    (plonetheme.drupal) python bootstrap.py
 	(plonetheme.drupal) bin/buildout
 	[...] be patient... [...]
 	(plonetheme.drupal) ./bin/instance fg
@@ -79,6 +82,12 @@ Go to http://localhost:8080, add a new Plone Site and install plonetheme.drupal
 Launch tests::
 
 	(plonetheme.drupal) ./bin/test -s plonetheme.drupal
+
+Launch code coverage::
+
+    (plonetheme.drupal) bin/coverage
+    (plonetheme.drupal) bin/report
+    And open with a browser htmlcov/index.html
 
 Credits
 -------
@@ -99,6 +108,6 @@ How to contribute and submit a patch ?
 
 
 .. _`plone.app.theming`: http://pypi.python.org/pypi/plone.app.theming
-.. _`plone.app.theming installation`: http://pypi.python.org/pypi/plone.app.theming#installation
+.. _`plone.app.theming installation`: http://pypi.python.org/pypi/plone.app.theming/1.0#installation
 .. _`Bartik`: https://drupal.org/documentation/themes/bartik
 

@@ -4,7 +4,9 @@ Changelog
 1.1 (unreleased)
 ~~~~~~~~~~~~~~~~
 
-- Nothing changed yet.
+- Tests with Plone 4.2 and 4.3.
+- Fix urls for images in theme.css to work on debug mode and... production mode !
+- Update tests, add some test buildouts and code coverage.
 
 
 1.0.1 (2012-06-11)
